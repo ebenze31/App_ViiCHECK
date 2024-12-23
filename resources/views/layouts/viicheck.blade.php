@@ -73,26 +73,6 @@
         </a>
     </div>
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Active bottom bar เมนู
-            const buttons = document.querySelectorAll('.flex.flex-col.items-center');
-            buttons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // ลบ active class ออกจากปุ่มทั้งหมด
-                    buttons.forEach(btn => btn.classList.remove('text-red-500'));
-
-                    // เพิ่ม active class ให้ปุ่มที่ถูกคลิก
-                    button.classList.add('text-red-500');
-                });
-            });
-        });
-    </script>
-
-
-
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
