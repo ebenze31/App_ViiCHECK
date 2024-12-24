@@ -3,7 +3,7 @@
 @section('content')
     <div class="content">
         <div class="title m-b-md">
-            {{ session('user_id') }}
+            {{ Auth::guard('web')->user()->name }}
         </div>
     </div>
 @endsection
