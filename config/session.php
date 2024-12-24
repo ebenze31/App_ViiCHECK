@@ -155,7 +155,7 @@ return [
     |
     */
 
-    'domain' => env('SESSION_DOMAIN', null),
+    'domain' => env('SESSION_DOMAIN', '.viicheck.com'), // ใช้ .viicheck.com เพื่อแชร์ session ข้ามโดเมน
 
     /*
     |--------------------------------------------------------------------------
@@ -168,7 +168,7 @@ return [
     |
     */
 
-    'secure' => env('SESSION_SECURE_COOKIE', true),
+    'secure' => env('SESSION_SECURE_COOKIE', true), // ใช้ true หากใช้ HTTPS
 
     /*
     |--------------------------------------------------------------------------
@@ -196,6 +196,5 @@ return [
     |
     */
 
-    'same_site' => null,
-
+    'same_site' => 'lax', // ตั้งค่า SameSite ให้เหมาะสม
 ];
