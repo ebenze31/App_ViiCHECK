@@ -148,9 +148,9 @@
         <div class="cont">
             <div class="content-wrap">
                 <div class="dropdown-content">
-                    <a href="#"><i class="fa-solid fa-file-contract me-1"></i> Policy</a>
-                    <a href="#"><i class="fa-solid fa-book-blank me-1"></i> Terms of service</a>
-                    <a href="#"><i class="fa-solid fa-key me-1"></i> Change password</a>
+                    <a href="{{ url('/policy') }}"><i class="fa-solid fa-file-contract me-1"></i> Policy</a>
+                    <a href="{{ url('/term_of_service') }}"><i class="fa-solid fa-book-blank me-1"></i> Terms of service</a>
+                    <a href="{{ url('/change_password') }}"><i class="fa-solid fa-key me-1"></i> Change password</a>
                     <a href="#"><i class="fa-solid fa-left-from-bracket me-1"></i> Logout</a>
                 </div>
             </div>
