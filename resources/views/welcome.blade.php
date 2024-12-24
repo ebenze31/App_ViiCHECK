@@ -3,7 +3,7 @@
 @section('content')
     <div class="content">
         <div class="title m-b-md">
-            {{ dd(session()->all()); }}
+            {{ dd(session()->all()) }}
         </div>
     </div>
 @endsection
