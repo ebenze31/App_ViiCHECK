@@ -4,9 +4,9 @@
     <div class="content">
         <div class="title m-b-md">
             @if (Auth::check())
-                {{ dd(Auth::user()) }}
+                <p>Welcome, {{ Auth::user()->name }}</p>
             @else
-                User is not logged in.
+                <p>User is not logged in.</p>
             @endif
         </div>
     </div>
