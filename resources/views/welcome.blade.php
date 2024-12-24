@@ -4,9 +4,11 @@
     <div class="content">
         <div class="title m-b-md">
             @if (Auth::check())
-                <p>Welcome, {{ Auth::user()->name }}</p>
+                <!-- แสดงข้อมูลผู้ใช้ -->
+                {{ Auth::user()->name }}
             @else
-                <p>User is not logged in.</p>
+                <!-- ถ้าผู้ใช้ยังไม่ล็อกอิน -->
+                User is not logged in.
             @endif
         </div>
     </div>
