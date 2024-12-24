@@ -3,7 +3,11 @@
 @section('content')
     <div class="content">
         <div class="title m-b-md">
-            {{ dd(session()->all()) }}
+            @if (Auth::check())
+                {{ dd(Auth::user()) }}
+            @else
+                User is not logged in.
+            @endif
         </div>
     </div>
 @endsection
